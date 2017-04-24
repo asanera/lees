@@ -1,0 +1,27 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\Álvaro\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] CLI Version:  3.6.0
+[debug] Platform:     win32
+[debug] Node Version: v6.10.1
+[debug] Time:         Fri Apr 07 2017 12:33:27 GMT+0200 (Hora de verano romance)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/lees-85d0d  
+ Fri Apr 07 2017 12:33:27 GMT+0200 (Hora de verano romance)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/lees-85d0d/tokens  
+ Fri Apr 07 2017 12:33:28 GMT+0200 (Hora de verano romance)
+[debug] <<< HTTP RESPONSE 200
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: C:\Users\Álvaro\Desktop\ProyectoFinal\Web3
+[debug] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/lees-85d0d  
+ Fri Apr 07 2017 12:33:29 GMT+0200 (Hora de verano romance)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/145669604568/clients/_:getWebAppConfig  
+ Fri Apr 07 2017 12:33:30 GMT+0200 (Hora de verano romance)
+[debug] <<< HTTP RESPONSE 200
+[info] Public Directory: public
+[info] 
+[info] Server listening at: http://localhost:5000

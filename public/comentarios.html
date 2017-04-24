@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/personalizado.css" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" type="image/x-icon" href="images/libro.png" />
+    <title>Comentarios</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">Lees</a> </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Inicio</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul> <img style="float : right" src="images/user-icon.png" alt="Login" width="50" height="50" id="usericon"> <img style="display : none; float : right" src="images/salir.png" alt="Logout" width="50" height="50" id="logouticon"> </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+        <br><br><br>
+        <h2>Todos los comentarios</h2>
+        <br>
+        <div id="comentarios"></div>
+        <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyDOrvLdkCgCJg7uXbtPVwJUd7H4zb-d0_k"
+                , authDomain: "lees-85d0d.firebaseapp.com"
+                , databaseURL: "https://lees-85d0d.firebaseio.com"
+                , storageBucket: "lees-85d0d.appspot.com"
+                , messagingSenderId: "145669604568"
+            };
+            firebase.initializeApp(config);
+            //Ahora vamos a escribir lo que el usario coloque en la base de datos
+        </script>
+        <script src="js/funciones.js"></script>
+        <script src="js/comentarios.js"></script>
+        <script src="js/auth.js"></script>
+        <script src="js/dbconector.js"></script>
+        
+        <!-- Librería jQuery requerida por los plugins de JavaScript -->
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <!-- Todos los plugins JavaScript de Bootstrap (también puedes
+         incluir archivos JavaScript individuales de los únicos
+         plugins que utilices) -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </div>
+</body>
+
+</html>

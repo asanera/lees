@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/personalizado.css" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" type="image/x-icon" href="images/libro.png" />
+
+    <title>Lees</title>
+</head>
+
+<body>
+    <!--Menu generado por Boostrap-->
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">Lees</a> </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Inicio</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                 <img style="float : right" src="images/user-icon.png" alt="Login" width="50" height="50" id="usericon"> 
+                <img style="display : none; float : right" src="images/salir.png" alt="Logout" width="50" height="50" id="logouticon"> 
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+         <!--Fin del menu-->
+        <br>
+            <br>
+            <br>
+        <header>
+         <h1>Coloca mensajes para que te leean a tiempo real</h1>
+        </header>
+        <section> 
+            <!--Texarea generado por Boostrap (el usuario coloca su contenido aquí)-->
+            <article>
+                <form id="mensaje "name="formMensaje" class="form" role="form">
+                    <div class="form-group">
+                        <textarea name="mensaje" placeholder="Coloque su mensaje" class="form-control" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-success" onclick="mostrar()" >Enviar</button>
+                </form>
+            </article>
+             <!--Fin del textarea-->
+            <br>
+            <!--Panel oculto para hacer referencia en el codigo js(los nuevos contenido se colocar antes de este panel)-->
+            <div id="dmensajes">
+                <div style="display : none;" id="0" class="panel panel-default">
+                    <div class="panel-body"> Ejemplo de panel muy sencillo </div>
+                </div>
+            </div>
+             <!--Fin del panel ocluto-->
+ 
+        </section>
+        <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyDOrvLdkCgCJg7uXbtPVwJUd7H4zb-d0_k"
+                , authDomain: "lees-85d0d.firebaseapp.com"
+                , databaseURL: "https://lees-85d0d.firebaseio.com"
+                , storageBucket: "lees-85d0d.appspot.com"
+                , messagingSenderId: "145669604568"
+            };
+            firebase.initializeApp(config);
+            //Ahora vamos a escribir lo que el usario coloque en la base de datos
+        </script>
+        <!--Referencia a los archivos js-->
+        <script src="js/comentarios.js"></script>
+        <script src="js/db.js"></script>
+        <script src="js/auth.js"></script>
+        <script src="js/funciones.js"></script>
+        
+        <!-- Librería jQuery requerida por los plugins de JavaScript -->
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <!-- Todos los plugins JavaScript de Bootstrap (también puedes
+         incluir archivos JavaScript individuales de los únicos
+         plugins que utilices) -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </div>
+</body>
+
+</html>
